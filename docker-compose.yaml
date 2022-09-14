@@ -1,0 +1,14 @@
+version: "3"
+services:
+  database:
+    image: postgres
+    container_name: postgres-db
+    restart: always
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER=Postgres
+      - POSTGRES_PASSWORD=mypassword
+    volumes:
+      - /Users/daeungkim/Documents/github/mlops-tutorial/postgres_mount:/var/lib/postgresql/data
+      - ./scripts/:/docker-entrypoint-initdb.d/
