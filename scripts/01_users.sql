@@ -1,1 +1,1 @@
-ALTER ROLE project_admin SUPERUSER;
+ALTER ROLE postgres SUPERUSER;

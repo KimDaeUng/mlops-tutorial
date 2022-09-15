@@ -129,4 +129,4 @@ dmypy.json
 .pyre/
 
 # DB
-/postgres_mount/*
+/pgsql_mount/*
